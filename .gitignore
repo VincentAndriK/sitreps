@@ -1,0 +1,17 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Python cache from tools/
+__pycache__/
+*.pyc
+
+# Local backups / temp
+*.bak
+*.tmp

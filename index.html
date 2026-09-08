@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Sitreps Penyakit Hewan">
+  <meta name="author" content="Ditjen Peternakan dan Kesehatan Hewan, Kementerian Pertanian Republik Indonesia">
+  <title>Situation Reports (Sitreps) Penyakit Hewan</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/img.css">
+</head>
+
+<body onload=loadFirst()>
+  <header>
+    <img role="img" class="logo kementan">
+    <h1>Situation Reports (Sitreps) Penyakit Hewan<br />Bulan <span class="bulanIni"></span></h1>
+    <img role="img" class="logo pkh">
+    <img role="img" class="logo keswan">
+    <p>&nbsp;</p>
+    <p class="main-desc">Laporan situasi penyakit (<em>situation reports</em>) merupakan laporan situasi untuk 11
+      penyakit prioritas dari pelaporan iSIKHNAS berdasarkan kejadian yang telah dikonfirmasi sebagai diagnosa definitif
+      (DX). laporan disajikan dalam bentuk distribusi temporal (perkembangan berdasarkan waktu) dan distribusi spasial
+      (perkembangan berdasarkan provinsi) serta informasi deskriptif lainnya. <em>Situation report</em> (SITREPS)
+      dimutakhirkan setiap bulan untuk memberikan informasi terkini PHMS prioritas kepada masyarakat umum.</p>
+    <p class="main-desc-eng">Situation reports are reports of 11 priority animal diseases from iSIKHNAS which incidence 
+      report has been confirmed as definitive diagnosis (DX). Situation reports (SITREPS) presented as temporal and
+      spatial distribution as well as other related information. SITREPS are updated monthly to give information about
+      current situation of priority animal diseases.</p>
+    <div class="calendar-month">
+      <label for="report-month">Pilih Bulan / Select Month:</label>
+      <input type="month" id="report-month" min="2025-05" name="report-month">
+      <button id="load-report" onclick="onReport()" class="btn btn-primary">Muat Laporan / Load Report</button>
+    </div>
+  </header>
+  <main class="container">
+    <div class="PMK box">
+      <div>
+        <img src="./assets/img/PMK_sapi.jpg" width="100%" alt="PMK">
+        <h2 class="box-title">Penyakit Mulut dan Kuku (PMK)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=PMK" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="LSD box">
+      <div>
+        <img src="./assets/img/LSD_sapi.jpg" width="100%" alt="LSD">
+        <h2 class="box-title">Lumpy Skin Disease (LSD)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=LSD" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="Rabies box">
+      <div>
+        <img src="./assets/img/RABIES_Anjing.jpeg" width="100%" alt="Rabies">
+        <h2 class="box-title">Rabies</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=Rabies" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="HPAI box">
+      <div>
+        <img src="./assets/img/AI_chicken.jpg" width="100%" alt="HPAI">
+        <h2 class="box-title">High Pathogenic Avian Influenza (HPAI)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=HPAI" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="Anthraks box">
+      <div>
+        <img src="./assets/img/ANTHRAKS_sapi PO.jpg" width="100%" alt="Anthraks">
+        <h2 class="box-title">Anthraks</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=Anthraks" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="SE box">
+      <div>
+        <img src="./assets/img/SE_kerbau.jpeg" width="100%" alt="SE">
+        <h2 class="box-title">Septicaemia Epizootica (SE)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=SE" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="Jembrana box">
+      <div>
+        <img src="./assets/img/JEMBRANA_sapi bali.jpg" width="100%" alt="Jembrana">
+        <h2 class="box-title">Penyakit Jembrana</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=Jembrana" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="ASF box">
+      <div>
+        <img src="./assets/img/asf_dom.jpg" alt="ASF" width="100%">
+        <h2 class="box-title">African Swine Fever (ASF)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=ASF" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="CSF box">
+      <div>
+        <img src="./assets/img/CSF_dom-pig.jpeg" width="100%" alt="CSF">
+        <h2 class="box-title">Hog Cholera/Classical Swine Fever (CSF)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=CSF" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="Brucellosis box">
+      <div>
+        <img src="./assets/img/dairy_brucellosis.jpg" width="100%" alt="Brucellosis">
+        <h2 class="box-title">Brucellosis</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=Brucellosis" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+    <div class="Surra box">
+      <div>
+        <img src="./assets/img/Surra_kuda.jpg" width="100%" alt="Surra">
+        <h2 class="box-title">Surra (Trypanosomiasis)</h2>
+        <p class="box-description"></p>
+      </div>
+      <div class="box-actions">
+        <a class="report-link box-link" rel="noopener noreferrer" aria-label="Kunjungi">Kunjungi</a>
+        <a class="archive-link" href="archive.html?disease=Surra" aria-label="Semua bulan">Semua bulan</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Data diolah dari: <img class="isikhnas" role="img" height="50" style="vertical-align: middle;" /></p>
+    <p>&copy; 2025 - 2026 Direktorat Jenderal Peternakan dan Kesehatan Hewan,
+      Kementerian Pertanian Republik Indonesia</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <script src="./assets/js/script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
