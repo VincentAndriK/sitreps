@@ -11,6 +11,14 @@ dan versi mengikuti [Semantic Versioning](https://semver.org/lang/id/).
 ### Added
 - Laporan bulan **September 2026** (`202609.html`) untuk 11 penyakit.
 
+### Changed
+- **Ukuran file laporan September 2026** dipangkas dari ~3 MB → ~300 KB per
+  file (~88.7% lebih kecil) dengan meng-eksternalisasi CSS/JS/logo bersama.
+  Total dari ~32.9 MB jadi ~3.7 MB.
+- `<title>` dan `og:title` di `ASF/202609.html`, `CSF/202609.html`, dan
+  `LSD/202609.html` diseragamkan dari `Dashboard_XXX` menjadi
+  `Laporan Perkembangan XXX`.
+
 ## [0.2.0] - 2026-09-08
 
 ### Added
