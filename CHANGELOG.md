@@ -6,6 +6,11 @@ dan versi mengikuti [Semantic Versioning](https://semver.org/lang/id/).
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-05
+
+### Added
+- Laporan bulan **September 2026** (`202609.html`) untuk 11 penyakit.
+
 ## [0.2.0] - 2026-09-08
 
 ### Added
@@ -53,6 +58,7 @@ dan versi mengikuti [Semantic Versioning](https://semver.org/lang/id/).
 - Aset CSS/JS/gambar di `assets/`.
 - Laporan bulanan Mei 2025 – Juli 2026 untuk seluruh penyakit.
 
-[Unreleased]: https://github.com/VincentAndriK/sitreps/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/VincentAndriK/sitreps/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/VincentAndriK/sitreps/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/VincentAndriK/sitreps/releases/tag/v0.2.0
 [0.1.0]: https://github.com/VincentAndriK/sitreps/releases/tag/v0.1.0
