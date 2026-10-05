@@ -18,6 +18,9 @@ dan versi mengikuti [Semantic Versioning](https://semver.org/lang/id/).
 - `<title>` dan `og:title` di `ASF/202609.html`, `CSF/202609.html`, dan
   `LSD/202609.html` diseragamkan dari `Dashboard_XXX` menjadi
   `Laporan Perkembangan XXX`.
+- `<title>` dan `og:title` di **CSF** dan **Rabies** bulan 202508–202607
+  (24 file) diseragamkan dari `Dashboard_CSF`/`Dashboard_Rabies` menjadi
+  `Laporan Perkembangan CSF`/`Laporan Perkembangan Rabies`.
 
 ## [0.2.0] - 2026-09-08
 
